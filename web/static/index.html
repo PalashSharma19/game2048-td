@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2048 · TD Learning Lab</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div><p class="eyebrow">AFTERSTATE LEARNING</p><h1>2048 <span>TD(0) Lab</span></h1></div>
+      <nav class="mode-switch" aria-label="Game mode">
+        <button data-mode="human" class="mode-button">Play Yourself</button>
+        <div class="agent-group"><span>RL Agent</span><div><button data-mode="step" class="mode-button">Step-by-Step</button><button data-mode="autoplay" class="mode-button">Autoplay</button></div></div>
+      </nav>
+    </header>
+    <div class="layout">
+      <section class="game-column">
+        <div class="stats-row"><div><small>SCORE</small><strong id="score">0</strong></div><div><small>BEST</small><strong id="best">0</strong></div><div><small>MOVES</small><strong id="moves">0</strong></div><div><small>TOP TILE</small><strong id="max-tile">2</strong></div></div>
+        <div class="board-wrap"><div id="board" class="board" role="grid" aria-label="2048 board"></div><div id="overlay" class="overlay hidden"></div></div>
+        <div class="game-controls"><button id="reset-board" class="button secondary">Reset Board</button><div class="arrows" aria-label="Move controls"><button data-direction="up" aria-label="Move up">↑</button><button data-direction="left" aria-label="Move left">←</button><button data-direction="down" aria-label="Move down">↓</button><button data-direction="right" aria-label="Move right">→</button></div></div>
+        <section class="agent-controls card hidden" id="agent-controls">
+          <div class="control-line"><div><label for="weights-source">Weights</label><select id="weights-source"><option value="trained">Trained agent</option><option value="fresh">Fresh agent (all weights zero)</option></select></div><label class="toggle"><input id="learning" type="checkbox"><span>Learning <b id="learning-label">ON</b></span></label></div>
+          <div id="step-controls" class="button-row"><button id="previous" class="button secondary">← Previous</button><button id="next" class="button primary">Next →</button></div>
+          <div id="auto-controls" class="button-row hidden"><button id="pause" class="button primary">Pause</button><label class="speed">Speed <input id="speed" type="range" min="1" max="20" value="8"><b id="speed-label">8 moves/s</b></label></div>
+        </section>
+        <div id="arrows-hint" class="hint">Use arrow keys or WASD · swipe or tap the arrows</div>
+      </section>
+      <aside id="details" class="card details"><div id="compact-stats"><h2>Game stats</h2><p>Merge tiles to build a higher score. Every move and random spawn is handled by the Python engine.</p><div class="statline"><span>Current speed</span><strong id="speed-stat">8 moves/s</strong></div><div class="statline"><span>TD error</span><strong id="td-live">—</strong></div></div>
+        <div id="step-details" class="hidden"><h2>Decision record</h2><div class="summary-strip"><div><small>TD UPDATES</small><strong id="td-updates">0</strong></div><div><small>|δ| THIS STEP</small><strong id="td-delta">—</strong></div><svg id="sparkline" viewBox="0 0 180 34" aria-label="Recent TD errors"></svg></div><div id="record-content"><p class="empty-record">Choose Next to inspect the agent's decision.</p></div></div>
+      </aside>
+    </div>
+  </main>
+  <dialog id="confirm-modal"><form method="dialog"><p class="eyebrow">NEW SESSION</p><h2>Switching modes will reset the board. Do you want to continue?</h2><div class="button-row"><button value="cancel" class="button secondary">Cancel</button><button id="confirm-switch" value="switch" class="button primary">Switch</button></div></form></dialog>
+  <script src="/app.js"></script>
+</body>
+</html>

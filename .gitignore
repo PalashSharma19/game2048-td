@@ -1,0 +1,5 @@
+runs/
+__pycache__/
+*.npz
+*.png
+results.json
