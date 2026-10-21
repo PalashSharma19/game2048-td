@@ -25,6 +25,57 @@ pip install -r requirements.txt
 python -m pytest tests          # 11 tests should pass
 ```
 
+## Run the Web UI
+
+The web UI runs locally. It uses Python for the game rules and agent decisions; no Node.js or frontend build step is needed.
+
+### Windows PowerShell
+
+Open PowerShell in the project folder (the folder containing `README.md`), then run:
+
+```powershell
+py -3 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python web/server.py --weights runs/large/weights.npz --network large
+```
+
+If PowerShell blocks virtual environment activation, run the server with the environment's Python directly:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe web/server.py --weights runs/large/weights.npz --network large
+```
+
+### macOS or Linux
+
+Open a terminal in the project folder and run:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python web/server.py --weights runs/large/weights.npz --network large
+```
+
+Once the terminal says the server is running, open **http://localhost:5000** in a browser. Leave the terminal open while using the UI; press `Ctrl+C` there to stop the server.
+
+The repository includes `runs/large/weights.npz`. The server loads those trained weights at startup and keeps them in memory. The `--network` argument is optional because the network type is stored in the weights file. For a small network weights file, use its path instead, for example `--weights runs/small/weights.npz`; the server will detect its network type.
+
+If the weights file is missing, train an agent first, for example:
+
+```bash
+python train.py --network large --games 100000
+```
+
+Training creates `runs/large/weights.npz`. The Web UI offers **Play Yourself**, **RL Agent: Step-by-Step**, and **RL Agent: Autoplay**. The agent modes can use the trained weights or a separate fresh small network initialized with zero weights. Step-by-Step lets you inspect each decision and undo or replay steps. Autoplay runs moves continuously and can optionally learn while it plays.
+
+To run the tests after setup:
+
+```bash
+python -m pytest tests
+```
+
 ## Running the experiments
 
 ```bash
