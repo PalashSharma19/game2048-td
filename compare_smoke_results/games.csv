@@ -1,0 +1,151 @@
+agent,game_index,score,max_tile,moves
+Zero-weight greedy,1,2136,128,213
+Zero-weight greedy,2,1424,128,155
+Zero-weight greedy,3,3868,256,317
+Zero-weight greedy,4,2536,256,211
+Zero-weight greedy,5,1680,128,172
+Zero-weight greedy,6,1048,64,126
+Zero-weight greedy,7,1904,128,194
+Zero-weight greedy,8,3880,256,314
+Zero-weight greedy,9,3432,256,289
+Zero-weight greedy,10,2844,128,273
+Zero-weight greedy,11,2700,256,234
+Zero-weight greedy,12,2896,256,238
+Zero-weight greedy,13,1632,128,174
+Zero-weight greedy,14,1616,128,171
+Zero-weight greedy,15,4340,256,355
+Zero-weight greedy,16,1876,128,192
+Zero-weight greedy,17,2484,256,216
+Zero-weight greedy,18,3184,256,270
+Zero-weight greedy,19,2912,256,240
+Zero-weight greedy,20,1908,128,195
+Zero-weight greedy,21,1772,128,179
+Zero-weight greedy,22,2624,256,231
+Zero-weight greedy,23,1332,128,138
+Zero-weight greedy,24,3204,256,275
+Zero-weight greedy,25,1444,128,153
+Zero-weight greedy,26,1368,128,143
+Zero-weight greedy,27,5176,512,359
+Zero-weight greedy,28,3052,256,262
+Zero-weight greedy,29,4336,256,328
+Zero-weight greedy,30,2892,256,246
+Zero-weight greedy,31,3564,256,297
+Zero-weight greedy,32,3200,256,270
+Zero-weight greedy,33,2788,256,230
+Zero-weight greedy,34,11784,1024,708
+Zero-weight greedy,35,3636,256,307
+Zero-weight greedy,36,1932,128,201
+Zero-weight greedy,37,3268,256,273
+Zero-weight greedy,38,6736,512,467
+Zero-weight greedy,39,2956,256,251
+Zero-weight greedy,40,1908,128,195
+Zero-weight greedy,41,1636,128,166
+Zero-weight greedy,42,2968,256,249
+Zero-weight greedy,43,5476,512,386
+Zero-weight greedy,44,3516,256,305
+Zero-weight greedy,45,4488,512,303
+Zero-weight greedy,46,7564,512,525
+Zero-weight greedy,47,3600,256,302
+Zero-weight greedy,48,3268,256,269
+Zero-weight greedy,49,2840,256,240
+Zero-weight greedy,50,2004,128,193
+Trained TD agent,1,2136,128,213
+Trained TD agent,2,1424,128,155
+Trained TD agent,3,3868,256,317
+Trained TD agent,4,2536,256,211
+Trained TD agent,5,1680,128,172
+Trained TD agent,6,1048,64,126
+Trained TD agent,7,1904,128,194
+Trained TD agent,8,3880,256,314
+Trained TD agent,9,3432,256,289
+Trained TD agent,10,2844,128,273
+Trained TD agent,11,2700,256,234
+Trained TD agent,12,2896,256,238
+Trained TD agent,13,1632,128,174
+Trained TD agent,14,1616,128,171
+Trained TD agent,15,4340,256,355
+Trained TD agent,16,1876,128,192
+Trained TD agent,17,2484,256,216
+Trained TD agent,18,3184,256,270
+Trained TD agent,19,2912,256,240
+Trained TD agent,20,1908,128,195
+Trained TD agent,21,1772,128,179
+Trained TD agent,22,2624,256,231
+Trained TD agent,23,1332,128,138
+Trained TD agent,24,3204,256,275
+Trained TD agent,25,1444,128,153
+Trained TD agent,26,1368,128,143
+Trained TD agent,27,5176,512,359
+Trained TD agent,28,3052,256,262
+Trained TD agent,29,4336,256,328
+Trained TD agent,30,2892,256,246
+Trained TD agent,31,3564,256,297
+Trained TD agent,32,3200,256,270
+Trained TD agent,33,2788,256,230
+Trained TD agent,34,11784,1024,708
+Trained TD agent,35,3636,256,307
+Trained TD agent,36,1932,128,201
+Trained TD agent,37,3268,256,273
+Trained TD agent,38,6736,512,467
+Trained TD agent,39,2956,256,251
+Trained TD agent,40,1908,128,195
+Trained TD agent,41,1636,128,166
+Trained TD agent,42,2968,256,249
+Trained TD agent,43,5476,512,386
+Trained TD agent,44,3516,256,305
+Trained TD agent,45,4488,512,303
+Trained TD agent,46,7564,512,525
+Trained TD agent,47,3600,256,302
+Trained TD agent,48,3268,256,269
+Trained TD agent,49,2840,256,240
+Trained TD agent,50,2004,128,193
+Random-move baseline,1,668,64,88
+Random-move baseline,2,828,64,105
+Random-move baseline,3,304,32,56
+Random-move baseline,4,672,64,87
+Random-move baseline,5,648,64,89
+Random-move baseline,6,720,64,93
+Random-move baseline,7,2220,256,179
+Random-move baseline,8,1016,64,121
+Random-move baseline,9,636,64,88
+Random-move baseline,10,932,128,99
+Random-move baseline,11,1280,128,130
+Random-move baseline,12,1280,128,137
+Random-move baseline,13,704,64,94
+Random-move baseline,14,512,64,70
+Random-move baseline,15,772,64,100
+Random-move baseline,16,636,64,86
+Random-move baseline,17,664,64,89
+Random-move baseline,18,528,64,76
+Random-move baseline,19,2276,256,194
+Random-move baseline,20,544,64,76
+Random-move baseline,21,1472,128,153
+Random-move baseline,22,920,128,100
+Random-move baseline,23,1136,128,121
+Random-move baseline,24,584,32,85
+Random-move baseline,25,1376,128,139
+Random-move baseline,26,1528,128,152
+Random-move baseline,27,544,64,75
+Random-move baseline,28,1120,128,123
+Random-move baseline,29,712,64,97
+Random-move baseline,30,2408,256,207
+Random-move baseline,31,1048,128,113
+Random-move baseline,32,1336,128,138
+Random-move baseline,33,916,128,100
+Random-move baseline,34,1348,128,142
+Random-move baseline,35,1300,128,135
+Random-move baseline,36,232,32,47
+Random-move baseline,37,684,64,90
+Random-move baseline,38,1384,128,141
+Random-move baseline,39,388,32,64
+Random-move baseline,40,1532,128,157
+Random-move baseline,41,648,64,85
+Random-move baseline,42,1184,128,129
+Random-move baseline,43,468,64,68
+Random-move baseline,44,960,64,119
+Random-move baseline,45,1292,128,132
+Random-move baseline,46,872,64,107
+Random-move baseline,47,456,64,65
+Random-move baseline,48,1288,128,132
+Random-move baseline,49,1420,128,144
+Random-move baseline,50,1076,128,113

@@ -4,6 +4,8 @@ An autonomous 2048 agent that learns entirely through self-play, with no hand-cr
 evaluation heuristics. The value of afterstates is learned with TD(0) and approximated
 by an n-tuple network.
 
+For a detailed walkthrough of the game representation, learning algorithm, scripts, tests, and web UI, see [PROJECT_GUIDE.md](PROJECT_GUIDE.md).
+
 ## Project structure
 
 ```

@@ -1,0 +1,7 @@
+{
+  "u_statistic": 1250.0,
+  "p_value_two_sided_normal_approx": 1.0,
+  "z_score": 0.0,
+  "cohens_d_trained_minus_greedy": 0.0,
+  "common_language_trained_beats_greedy": 0.5
+}

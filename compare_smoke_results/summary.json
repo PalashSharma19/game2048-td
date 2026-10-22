@@ -1,0 +1,83 @@
+{
+  "Zero-weight greedy": {
+    "games": 50,
+    "mean_score": 3132.64,
+    "median_score": 2894.0,
+    "std_score": 1822.0887516187324,
+    "min_score": 1048.0,
+    "max_score": 11784.0,
+    "mean_moves": 260.0,
+    "mean_max_tile_exponent": 7.76,
+    "highest_tile": 1024,
+    "reach_rates_percent": {
+      "512": 12.0,
+      "1024": 2.0,
+      "2048": 0.0,
+      "4096": 0.0,
+      "8192": 0.0,
+      "16384": 0.0
+    },
+    "reach_2048_ci95_percent": [
+      0.0,
+      7.135003417431873
+    ],
+    "mean_score_ci95": [
+      2627.582765620212,
+      3637.697234379788
+    ]
+  },
+  "Trained TD agent": {
+    "games": 50,
+    "mean_score": 3132.64,
+    "median_score": 2894.0,
+    "std_score": 1822.0887516187324,
+    "min_score": 1048.0,
+    "max_score": 11784.0,
+    "mean_moves": 260.0,
+    "mean_max_tile_exponent": 7.76,
+    "highest_tile": 1024,
+    "reach_rates_percent": {
+      "512": 12.0,
+      "1024": 2.0,
+      "2048": 0.0,
+      "4096": 0.0,
+      "8192": 0.0,
+      "16384": 0.0
+    },
+    "reach_2048_ci95_percent": [
+      0.0,
+      7.135003417431873
+    ],
+    "mean_score_ci95": [
+      2627.582765620212,
+      3637.697234379788
+    ]
+  },
+  "Random-move baseline": {
+    "games": 50,
+    "mean_score": 989.44,
+    "median_score": 918.0,
+    "std_score": 483.5020275161676,
+    "min_score": 232.0,
+    "max_score": 2408.0,
+    "mean_moves": 110.6,
+    "mean_max_tile_exponent": 6.46,
+    "highest_tile": 256,
+    "reach_rates_percent": {
+      "512": 0.0,
+      "1024": 0.0,
+      "2048": 0.0,
+      "4096": 0.0,
+      "8192": 0.0,
+      "16384": 0.0
+    },
+    "reach_2048_ci95_percent": [
+      0.0,
+      7.135003417431873
+    ],
+    "mean_score_ci95": [
+      855.4200755493423,
+      1123.4599244506578
+    ]
+  }
+}
